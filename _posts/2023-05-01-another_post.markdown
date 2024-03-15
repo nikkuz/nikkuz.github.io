@@ -1,3 +1,4 @@
-# First post!
+# Just another post
 
-This is my first post to the blog
+Still learning stuff and markdown, in 2024.
+
