@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "OTP FOB tinkering"
-date:   2023-03-01 23:08:30 +1100
+title:  "DIY Hardware 2FA Token: Pi Zero + Waveshare E-Ink + PiSugar Button + QR Scanner + AI"
+date:   2025-12-05 23:08:30 +1100
 categories: jekyll update
 ---
 
@@ -44,6 +44,11 @@ Since the FOB itself will not need any connectivity and will consume minimum pow
 
 # Vibecoding
 
+The project started as a series of ChatGPT iterations. The aim was to explore GPT possiblities as an aide in rapid prototyping and it worked flawlessly. The main approach was not focused on me troubleshootng the code but rather giving GPT clues to help and fix it's code as we did move.
+
+
+
+
 <!-- Ideas - principles - targets (no deep-dive, set tasks,  show the issue to AI for troublshooting) -->
 
 <!-- Things that worked out of the box -->
@@ -51,28 +56,29 @@ Since the FOB itself will not need any connectivity and will consume minimum pow
 
 # Buldout and tests
 
+
+
 ## Software
+
+Building this project as a python pachage was another part of exploration journey as I was curious to make and installable and maintainable package that would have all the features of a grown-up software:
+
+ - repository
+ - installation and update logic
+ - Systemd integrations
+ - etc
+ 
 
 ## Hardware
 
-<!-- pwnagotchi project as a donor works suprisingly well + pisugar -->
 
-## 3D Printing
+### SOC - Raspberry Pi Zero 2W
 
-I purchased initial hardware for pwnagotchi and figured there's plenty of cases out there available for print. Adding camera to that project was a bit ad-hoc and, as with every project requirement coming late - it didn't fit (unsurprisingly). So my initial prototype has a camera sticked to the side of the case with a camera cable dangling at the side. 
+Pizero 2W is a great platform for tinkering. It is quite powerful to host almost anything.
 
-I managed to print the case using a Printcloud service and was extremely satisfied with the results, taking into account that the whole printing task (select model, find sercice, upload model and choosing materials, etc) was done in background from my phone, while I was busy with something else.
+### Case and 3D Printing
 
+I also was keen to explore what current resources available for 3D printing in 2025. Since I stuck with the pwnagotchi project as base for our FOB [this case](https://www.thingiverse.com/thing:6446341) was chosen as donor for the project. I was quite impressed by what [Craftcloud](https://craftcloud3d.com/) can offer, especially when you have your STL file at hand. I was able to log my orders within 10 minuts, and they were printed almost straight away. (no affilation here, just impressed user).
 
-
-<!-- Printcloud -->
-
-##Case and STL
-
-Taking the whole printing experience into account I was under impression that maybe I could give it a try to adjust the initial model with AI and print updated case. However, GPT can't render at this point so we had to go down the path of installing openscad and editing script that would adjust the original model. That wasn't successful yet, so - dangling camera goes to the backlog of fixes.
-
-
-<!-- Printcloud -->
 
 
 #Nuances that we need to fix
@@ -84,5 +90,19 @@ Taking the whole printing experience into account I was under impression that ma
 
 #Project code
 
+Project code can be foound [in this repository](https://github.com/nikkuz/otp_zerow_project).
 
 
+# Future improvements
+
+
+## case and stl
+
+<!-- Printcloud -->
+
+## Partial screen refresh
+
+
+## Vibecode environment
+
+Explore writing code with cursor and keeping custom set of instructions to improve interactions with AI in regards to output file requirements, documentation and more.
