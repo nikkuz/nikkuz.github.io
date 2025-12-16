@@ -25,7 +25,15 @@ This project is purely instrumental and doesn't have any practical value apart f
 
 This all comes down as a FOB device that I'm currently working on.
 
-# TOTP
+# TOTP and motivation
+
+
+Exciting magic about TOTP is that once set up, it does not need any particular network connection as the module relies completely on time and a shared secret that was calculated during the initial setup.
+
+OTP keys are regenerated every 30 seconds, which makes an ideal candidate data to be displayed on a e-ink display.
+
+Since the FOB itself will not need any connectivity and will consume minimum power to run a display and Raspbian itself, paring the device with a small battery would make the FOB useful and live beyond the lab power source.
+
 
 <!-- no network and syncronus -->
 
