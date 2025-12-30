@@ -51,29 +51,38 @@ Since the FOB itself will not need any connectivity and will consume minimum pow
 
 # Buldout and tests
 
-## software
+## Software
 
-## hardware
+## Hardware
 
 <!-- pwnagotchi project as a donor works suprisingly well + pisugar -->
 
 ## 3D Printing
 
+I purchased initial hardware for pwnagotchi and figured there's plenty of cases out there available for print. Adding camera to that project was a bit ad-hoc and, as with every project requirement coming late - it didn't fit (unsurprisingly). So my initial prototype has a camera sticked to the side of the case with a camera cable dangling at the side. 
+
+I managed to print the case using a Printcloud service and was extremely satisfied with the results, taking into account that the whole printing task (select model, find sercice, upload model and choosing materials, etc) was done in background from my phone, while I was busy with something else.
+
+
+
 <!-- Printcloud -->
 
-## case and stl
+##Case and STL
+
+Taking the whole printing experience into account I was under impression that maybe I could give it a try to adjust the initial model with AI and print updated case. However, GPT can't render at this point so we had to go down the path of installing openscad and editing script that would adjust the original model. That wasn't successful yet, so - dangling camera goes to the backlog of fixes.
+
 
 <!-- Printcloud -->
 
 
-# Nuances that we need to fix
+#Nuances that we need to fix
 
 <!-- Display refresh -->
 <!-- power consumption -->
 <!-- cases -->
+<!-- dangling camera-->
 
-
-# Project code
+#Project code
 
 
 
